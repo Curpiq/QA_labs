@@ -1,0 +1,48 @@
+1 2 3
+Not a triangle
+1.1111 1.2222 2.33333
+Not a triangle
+5 5 -1
+Not a triangle
+0 1 2
+Not a triangle
+3 9 7
+Regular
+3   9    7
+Regular
+5.4444 7.5555 10.00001
+Regular
+1 2 2
+Isosceles
+2 2 1
+Isosceles
+2 1 2
+Isosceles
+1.22222 1.22222 2.000004
+Isosceles
+2 2 2
+Equilateral
+3.33333333 3.33333333 3.33333333
+Equilateral
+1.7976931348623157E+308 1.7976931348623157E+308 1.7976931348623157E+308
+Equilateral
+1.7976931348623157E+309 1.7976931348623157E+308 1.7976931348623157E+308
+Unknown error
+-1.7976931348623157E+309 1.7976931348623157E+308 1.7976931348623157E+308
+Unknown error
+5 5 F
+Unknown error
+5 5 +
+Unknown error
+5 5
+Unknown error
+5
+Unknown error
+5 5 5 5
+Unknown error
+
+Unknown error
+5 5 side
+Unknown error
+5,3423 5,34 7,3435
+Unknown error
