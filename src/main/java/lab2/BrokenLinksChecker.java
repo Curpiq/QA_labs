@@ -4,6 +4,9 @@ import java.io.FileWriter;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.io.IOException;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
 import java.util.Date;
 import java.util.HashSet;
 import java.util.Set;
@@ -58,18 +61,15 @@ public class BrokenLinksChecker {
         } catch (IOException exception) {
             exception.printStackTrace();
         }
-        FileWriter validLinks = null;
-        FileWriter brokenLinks = null;
-        try {
-            validLinks = new FileWriter("src/main/java/lab2/validLinks.txt");
-            brokenLinks = new FileWriter("src/main/java/lab2/brokenLinks.txt");
+        try (FileWriter validLinks = new FileWriter("src/main/java/lab2/validLinks.txt");
+             FileWriter brokenLinks = new FileWriter("src/main/java/lab2/brokenLinks.txt")) {
 
             int validLinksCounter = 0;
             int brokenLinksCounter = 0;
 
             for (String link : uniqueLinks) {
                 int responseCode = getLinkResponseCode(link);
-                if (responseCode < 300) {
+                if (responseCode >= 200 && responseCode < 300) {
                     validLinksCounter++;
                     validLinks.write(link + " " + responseCode + "\n");
                 } else {
@@ -78,14 +78,12 @@ public class BrokenLinksChecker {
                 }
             }
 
-            Date date = new Date();
-            validLinks.write("\n" + "Number of links: " + validLinksCounter + "\n" + date + "\n");
-            brokenLinks.write("\n" + "Number of links: " + brokenLinksCounter + "\n"+ date + "\n");
+            DateFormat date = new SimpleDateFormat("yyyy.MM.dd HH:mm:ss");
+            Calendar cal = Calendar.getInstance();
+            validLinks.write("\n" + "Links: " + validLinksCounter + "\n" + date.format(cal.getTime()) + "\n");
+            brokenLinks.write("\n" + "Links: " + brokenLinksCounter + "\n"+ date.format(cal.getTime()) + "\n");
         } catch (Exception exception) {
             exception.printStackTrace();
-        } finally {
-            validLinks.close();
-            brokenLinks.close();
         }
     }
 }
