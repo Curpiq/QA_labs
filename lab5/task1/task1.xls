@@ -1,0 +1,43 @@
+Font	Size	Typeface	Color	Underline	ColorUnderline	CrossedOut	DoubleStrikethrough	Superscript	Subscript	Shift	SmallCaps	AllUppercase	AlignHeightOfCharacters
+Arial	50	bold italic	green	no	no	true	false	true	false	1	false	true	false
+Times New Roman	1	usual	blue	wavy	white	false	true	false	true	-50	false	true	true
+Calibri	50	italic	blue	line	black	false	true	false	true	-1	true	false	false
+Courier New	1	bold	white	wavy	white	false	true	false	true	-1	false	true	true
+Arial	90.1	bold italic	black	no	no	false	true	false	true	-1	true	false	false
+Courier New	50	bold	blue	no	no	true	false	false	false	0	false	true	true
+Times New Roman	50	bold italic	red	line	black	false	false	false	true	-100	false	true	false
+Times New Roman	50	bold	black	wavy	red	true	false	true	false	100	false	true	true
+Times New Roman	90.1	bold	red	line	red	true	false	true	false	50	false	true	true
+Courier New	4000	bold italic	white	line	red	false	true	true	false	100	true	false	false
+Freestyle Script	4000	bold	green	dotted	white	false	true	false	true	-1	true	false	true
+Times New Roman	4000	bold	green	no	no	false	true	true	false	100	false	false	false
+Arial	1	italic	black	dotted	white	false	true	false	true	-100	false	true	false
+Freestyle Script	1	bold	white	wavy	white	true	false	true	false	1	true	false	false
+Courier New	90.1	usual	red	no	no	false	true	false	true	-1	false	false	false
+Times New Roman	90.1	bold	black	no	no	false	false	false	true	-100	false	false	false
+Courier New	4000	italic	black	dotted	black	false	true	true	false	1	true	false	true
+Arial	90.1	bold	blue	dotted	black	true	false	true	false	100	true	false	true
+Freestyle Script	90.1	usual	green	wavy	black	false	true	false	false	0	false	true	true
+Courier New	4000	bold italic	blue	wavy	red	true	false	false	true	-100	true	false	true
+Calibri	50	bold italic	red	dotted	black	false	true	true	false	1	false	true	true
+Arial	4000	usual	black	line	white	true	false	false	false	0	false	false	false
+Freestyle Script	90.1	italic	white	line	white	false	true	true	false	100	true	false	false
+Courier New	1	bold italic	green	line	black	true	false	false	true	-50	false	true	false
+Arial	90.1	italic	red	wavy	red	false	true	false	true	-50	true	false	true
+Freestyle Script	50	bold italic	white	dotted	white	false	true	false	true	-100	false	false	true
+Calibri	50	usual	green	no	no	false	true	false	true	-100	false	true	true
+Times New Roman	90.1	usual	blue	line	red	false	true	true	false	1	false	true	true
+Arial	1	bold italic	white	dotted	black	false	true	true	false	50	false	true	true
+Times New Roman	1	usual	red	no	no	false	true	true	false	100	true	false	false
+Times New Roman	4000	italic	black	dotted	white	true	false	false	true	-50	true	false	true
+Courier New	4000	bold	red	line	white	false	true	true	false	50	true	false	true
+Calibri	90.1	italic	green	wavy	red	true	false	true	false	50	false	true	false
+Freestyle Script	90.1	italic	black	no	no	false	true	true	false	50	false	true	false
+Freestyle Script	4000	bold	white	no	no	true	false	false	true	-50	false	true	false
+Freestyle Script	50	usual	blue	wavy	white	false	true	true	false	50	false	true	true
+Calibri	4000	italic	white	wavy	black	false	true	true	false	100	false	true	false
+Times New Roman	1	usual	white	dotted	red	true	false	false	true	-1	false	true	false
+Freestyle Script	50	italic	red	dotted	red	false	true	false	false	0	false	true	true
+Times New Roman	50	bold italic	white	no	no	false	true	false	false	0	true	false	false
+Calibri	50	bold	red	no	no	false	true	false	true	-50	false	true	false
+Calibri	1	bold italic	black	dotted	white	false	true	false	false	0	false	true	true
