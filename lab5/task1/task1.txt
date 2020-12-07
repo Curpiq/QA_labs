@@ -17,7 +17,7 @@ AlignHeightOfCharacters: true, false
 
 IF [Strikethrough] = "true" THEN [DoubleStrikethrough] = "false";
 IF [Underline] = "none" THEN [UnderlineColor] = "none";
-IF [ColorUnderline] = "none" THEN [Underline] = "none";
+IF [UnderlineColor] = "none" THEN [Underline] = "none";
 IF [Superscript] = "true" THEN [Subscript] = "false";
 IF [SmallCaps] = "true" THEN [AllUppercase] = "false";
 IF [AllUppercase] = "true" THEN [SmallCaps] = "false";
