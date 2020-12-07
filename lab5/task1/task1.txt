@@ -2,25 +2,24 @@ Font: Arial, Times New Roman, Calibri, Courier New, Freestyle Script
 Size: 1, 50, 90.1, 4000
 Typeface: usual, italic, bold, bold italic
 Color: black, white, green, blue, red
-Underline: none, line, dotted, wavy
-UnderlineColor: none, black, white, red
-Strikethrough: true, false
+Underline: no, line, dotted, wavy
+ColorUnderline: no, black, white, red
+CrossedOut: true, false
 DoubleStrikethrough: true, false
 Superscript: true, false
 Subscript: true, false
-Offset: -100, -50, -1, 0, 1, 50, 100
+Shift: -100, -50, -1, 0, 1, 50, 100
 SmallCaps: true, false
 AllUppercase: true, false
 AlignHeightOfCharacters: true, false
 
-{Font, Size, Typeface, Color, Underline, UnderlineColor, Strikethrough, DoubleStrikethrough, Superscript, Subscript, Offset, SmallCaps, AllUppercase, AlignHeightOfCharacters} @ 2
+{Font, Size, Typeface, Color, Underline, ColorUnderline, CrossedOut, DoubleStrikethrough, Superscript, Subscript, Shift, SmallCaps, AllUppercase, AlignHeightOfCharacters} @ 2
 
-IF [Strikethrough] = "true" THEN [DoubleStrikethrough] = "false";
-IF [Underline] = "none" THEN [UnderlineColor] = "none";
-IF [ColorUnderline] = "none" THEN [Underline] = "none";
+IF [CrossedOut] = "true" THEN [DoubleStrikethrough] = "false";
 IF [Superscript] = "true" THEN [Subscript] = "false";
 IF [SmallCaps] = "true" THEN [AllUppercase] = "false";
-IF [AllUppercase] = "true" THEN [SmallCaps] = "false";
-IF [Offset] in {-100, -50, -1} THEN [Subscript] = "true";
-IF [Offset] in {1, 50, 100} THEN [Superscript] = "true";
-IF [Offset] = 0 THEN [Subscript] = "false" AND [Superscript] = "false";
+IF [Shift] in {-100, -50, -1} THEN [Subscript] = "true";
+IF [Shift] in {1, 50, 100} THEN [Superscript] = "true";
+IF [Shift] = 0 THEN [Subscript] = "false" AND [Superscript] = "false";
+IF [Underline] = "no" THEN [ColorUnderline] = "no";
+IF [ColorUnderline] = "no" THEN [Underline] = "no";
