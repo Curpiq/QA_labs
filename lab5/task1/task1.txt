@@ -1,4 +1,4 @@
-Font: Arial, Times New Roman, Calibri, Courier New, Freestyle Script
+Font: Arial, Times New Roman, Courier New, Freestyle Script
 Size: 1, 50, 90.1, 4000
 Typeface: usual, italic, bold, bold italic
 Color: black, white, green, blue, red
