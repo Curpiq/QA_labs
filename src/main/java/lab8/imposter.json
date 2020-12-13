@@ -1,0 +1,52 @@
+{
+    "port": 4545,
+    "protocol": "http",
+    "stubs" : [{
+        "predicates": [{
+            "and": [{
+                "equals": {
+                    "path": "/rate/eur",
+                    "method": "GET"
+                }
+            }
+            ]
+        }],
+        "responses": [
+            { "is": {"body":{"eur": "90,02"}}}
+        ]
+    },
+        {
+            "predicates": [{
+                "and": [{
+                    "equals": {
+                        "path": "/rate/usd",
+                        "method": "GET"
+                    }
+                }
+                ]
+            }],
+            "responses": [
+                { "is": {"body":{"usd": "74,38"}}}
+            ]
+        },
+        {
+            "predicates": [{
+                "and": [{
+                    "equals": {
+                        "path": "/rate/gbr",
+                        "method": "GET"
+                    }
+                }
+                ]
+            }],
+            "responses": [
+                { "is": {"body":{"gbr": "98,64"}}}
+            ]
+        },
+        {
+            "responses": [
+                {"is": {"statusCode": 400}}
+            ]
+        }
+    ]
+}
